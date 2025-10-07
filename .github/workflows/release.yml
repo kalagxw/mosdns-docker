@@ -36,7 +36,7 @@ jobs:
         with:
           build-args: |
             TAG=${{ env.TAG }}
-            REPOSITORY=pmkol/mosdns-x
+            REPOSITORY='pmkol/mosdns-x'
           platforms: linux/arm/v7,linux/arm64
           push: true
           tags: |
