@@ -12,7 +12,7 @@ RUN apk add --update git \
 	&& go build -ldflags "-s -w -X main.version=${TAG}" -trimpath -o mosdns
 
 FROM --platform=${TARGETPLATFORM} alpine:latest
-LABEL maintainer="IrineSistiana <github.com/IrineSistiana>"
+LABEL maintainer="pmkol/mosdns-x"
 
 COPY --from=builder /root/mosdns/mosdns /usr/bin/
 
